@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rubik_regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+        <array key="worksans_regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="112" id="Zin-Qs-MbB" customClass="PostTableViewCell" customModule="iOSTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zin-Qs-MbB" id="OuQ-94-PO8">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBR-9B-h4l" customClass="KhaznaCellView" customModule="iOSTask" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="377" height="96"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMn-DI-kmB" userLabel="ShadowView" customClass="KhaznaShadowView" customModule="iOSTask" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="100" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Uqc-4W-6cb" customClass="KhaznaImageView" customModule="iOSTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Uqc-4W-6cb" firstAttribute="top" secondItem="IMn-DI-kmB" secondAttribute="top" id="8Ch-Hz-UhR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uqc-4W-6cb" secondAttribute="bottom" id="8L4-yI-UtL"/>
+                                    <constraint firstAttribute="width" constant="100" id="AjF-Zv-tUw"/>
+                                    <constraint firstItem="Uqc-4W-6cb" firstAttribute="leading" secondItem="IMn-DI-kmB" secondAttribute="leading" id="KYT-UQ-43g"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uqc-4W-6cb" secondAttribute="trailing" id="afb-Pg-Z6L"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Gray" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7L-v8-0Uy" customClass="WoocerLabel" customModule="iOSTask" customModuleProvider="target">
+                                <rect key="frame" x="116" y="8" width="261" height="21"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="22"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQb-P5-CRi" customClass="WoocerLabel" customModule="iOSTask" customModuleProvider="target">
+                                <rect key="frame" x="116" y="37" width="249" height="51"/>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="13"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="SetColor">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="17"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CQb-P5-CRi" secondAttribute="bottom" constant="8" id="0Pb-JG-TVa"/>
+                            <constraint firstItem="CQb-P5-CRi" firstAttribute="leading" secondItem="E7L-v8-0Uy" secondAttribute="leading" id="2kU-sm-VSX"/>
+                            <constraint firstAttribute="bottom" secondItem="IMn-DI-kmB" secondAttribute="bottom" constant="8" id="7Pd-E4-Ms6"/>
+                            <constraint firstItem="IMn-DI-kmB" firstAttribute="leading" secondItem="xBR-9B-h4l" secondAttribute="leading" constant="8" id="9ST-kw-v6h"/>
+                            <constraint firstItem="CQb-P5-CRi" firstAttribute="top" secondItem="E7L-v8-0Uy" secondAttribute="bottom" constant="8" id="Kxr-3g-xOD"/>
+                            <constraint firstItem="IMn-DI-kmB" firstAttribute="top" secondItem="xBR-9B-h4l" secondAttribute="top" constant="8" id="LzM-TU-Xvz"/>
+                            <constraint firstItem="E7L-v8-0Uy" firstAttribute="leading" secondItem="IMn-DI-kmB" secondAttribute="trailing" constant="8" id="OMZ-aF-2p0"/>
+                            <constraint firstItem="E7L-v8-0Uy" firstAttribute="top" secondItem="IMn-DI-kmB" secondAttribute="top" id="QgO-yH-lyD"/>
+                            <constraint firstAttribute="trailing" secondItem="CQb-P5-CRi" secondAttribute="trailing" constant="12" id="Uvl-ag-mA1"/>
+                            <constraint firstAttribute="trailing" secondItem="E7L-v8-0Uy" secondAttribute="trailing" id="htx-fD-X82"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xBR-9B-h4l" secondAttribute="trailing" constant="8" id="3Dq-PJ-q4O"/>
+                    <constraint firstItem="xBR-9B-h4l" firstAttribute="top" secondItem="OuQ-94-PO8" secondAttribute="top" constant="8" id="TbR-ld-Qv9"/>
+                    <constraint firstItem="xBR-9B-h4l" firstAttribute="leading" secondItem="OuQ-94-PO8" secondAttribute="leading" constant="8" id="VF1-PR-i5t"/>
+                    <constraint firstAttribute="bottom" secondItem="xBR-9B-h4l" secondAttribute="bottom" constant="8" id="cQg-Bk-ifB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="CQb-P5-CRi" id="7RK-tg-gTb"/>
+                <outlet property="titleLabel" destination="E7L-v8-0Uy" id="JQb-5f-IZl"/>
+            </connections>
+            <point key="canvasLocation" x="41.984732824427482" y="-171.83098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,18 @@
+//
+//  Production.xcconfig
+//  FakeStoreDemo
+//
+//  Created by Adel Aref on 14/11/2024.
+//
+
+// Configuration settings file format documentation can be found at:
+
+Base_URL = productionjsonplaceholder.typicode.com/
+Scheme = https
+
+// App Settings
+APP_NAME = Khazna
+APP_BUNDLE_ID = com.Khazna.iOSTask
+
+Base_URL = jsonplaceholder.typicode.com/
+Scheme = https
