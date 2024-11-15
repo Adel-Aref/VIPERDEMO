@@ -145,7 +145,7 @@ The app includes robust unit tests to validate VIPER components:
 ## Screenshots
 
 ### Posts List Screen
-| ![Posts List](https://via.placeholder.com/400x800) |
+| ![Posts List](https://files.fm/u/45jfaxggbj) |
 
 ### Post Details Screen
 | ![Post Details](https://via.placeholder.com/400x800) |
