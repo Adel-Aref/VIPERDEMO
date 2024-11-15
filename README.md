@@ -1,4 +1,4 @@
-# PostDetails VIPER Application
+# Posts VIPER Application
 
 ## Overview
 This repository contains an iOS application that demonstrates the implementation of the **VIPER architecture**. The app includes two main features: a **Posts List** and a **Post Details** screen. It highlights the use of caching, animations, and multi-scheme configurations while adhering to clean architecture principles.
